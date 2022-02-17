@@ -6,11 +6,21 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
     event.preventDefault();
     { location.href= '/EnterPage';}};document.getElementById('i0v3u').onclick = (event) => {
     event.preventDefault();
+    { location.href= '/HomePage';}};document.getElementById('i84zv').onclick = (event) => {
+    event.preventDefault();
     { location.href= '/HomePage';}};document.getElementById('i05kl').onclick = (event) => {
     event.preventDefault();
-    { window.document.location = '/';}};document.getElementById('i4k98').onclick = (event) => {
+    { window.document.location = '/';}};document.getElementById('itq9jt').onclick = (event) => {
     event.preventDefault();
-    { window.document.location = '#submenu1';}};document.getElementById('i6ivem').onclick = (event) => {
+    { location.href= '/Contract';}};document.getElementById('i4k98').onclick = (event) => {
+    event.preventDefault();
+    { window.document.location = '#submenu1';}};document.getElementById('iq4kx').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Pre-Assessment';}};document.getElementById('i9vat').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Profit&Loss';}};document.getElementById('iix52a').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/RiskAssessmentProtocol';}};document.getElementById('i6ivem').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/updateOverview/','');apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('ir7zdp').onclick = (event) => {
     event.preventDefault();
