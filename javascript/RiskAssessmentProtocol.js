@@ -1,5 +1,17 @@
-document.getElementById('i05kl').onclick = (event) => {
+document.getElementById('idts').onclick = (event) => {
     event.preventDefault();
-    { window.document.location = '/';}};document.getElementById('i4k98').onclick = (event) => {
+    { location.href= '/HomePage';}};document.getElementById('ima8').onclick = (event) => {
     event.preventDefault();
-    { window.document.location = '#submenu1';}};window.onload = () => {};
+    { location.href= '/HomePage';}};document.getElementById('i05kl').onclick = (event) => {
+    event.preventDefault();
+    { window.document.location = '/';}};document.getElementById('itq9jt').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Overview';}};document.getElementById('i5dd3').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Contract';}};document.getElementById('i4k98').onclick = (event) => {
+    event.preventDefault();
+    { window.document.location = '#submenu1';}};document.getElementById('iq4kx').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Pre-Assessment';}};document.getElementById('i9vat').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Profit&Loss';}};window.onload = () => {};
