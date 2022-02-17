@@ -8,6 +8,7 @@ module.exports = {
 	'Pre-Assessment' : './javascript/Pre-Assessment.js',
 	'Profit&Loss' : './javascript/Profit&Loss.js',
 	'RiskAssessmentProtocol' : './javascript/RiskAssessmentProtocol.js',
+	'updateOverview' : './javascript/updateOverview.js',
 },
   output: {
     path: path.resolve(__dirname, 'dist'),

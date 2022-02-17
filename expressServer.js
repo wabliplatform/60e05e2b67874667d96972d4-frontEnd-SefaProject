@@ -32,6 +32,8 @@ class ExpressServer {
 			this.app.get('/Profit&Loss/:id', (req, res) => res.sendFile(path.join(__dirname,'html','Profit&Loss.html')));
 			this.app.get('/RiskAssessmentProtocol', (req, res) => res.sendFile(path.join(__dirname,'html','RiskAssessmentProtocol.html')));
 			this.app.get('/RiskAssessmentProtocol/:id', (req, res) => res.sendFile(path.join(__dirname,'html','RiskAssessmentProtocol.html')));
+			this.app.get('/updateOverview', (req, res) => res.sendFile(path.join(__dirname,'html','updateOverview.html')));
+			this.app.get('/updateOverview/:id', (req, res) => res.sendFile(path.join(__dirname,'html','updateOverview.html')));
 			
     }
   
