@@ -72,6 +72,60 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property serviceProviderName (base name: "serviceProviderName")', function() {
+      // uncomment below and update the code to test the property serviceProviderName
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property directorName (base name: "directorName")', function() {
+      // uncomment below and update the code to test the property directorName
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property countryRegistration (base name: "countryRegistration")', function() {
+      // uncomment below and update the code to test the property countryRegistration
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property companyNumber (base name: "companyNumber")', function() {
+      // uncomment below and update the code to test the property companyNumber
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property registeredOfficeAddress (base name: "registeredOfficeAddress")', function() {
+      // uncomment below and update the code to test the property registeredOfficeAddress
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property registeredOfficePostcode (base name: "registeredOfficePostcode")', function() {
+      // uncomment below and update the code to test the property registeredOfficePostcode
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property registeredOfficeCity (base name: "registeredOfficeCity")', function() {
+      // uncomment below and update the code to test the property registeredOfficeCity
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property outputType (base name: "outputType")', function() {
+      // uncomment below and update the code to test the property outputType
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property currency (base name: "currency")', function() {
+      // uncomment below and update the code to test the property currency
+      //var instance = new TempApi.Project();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

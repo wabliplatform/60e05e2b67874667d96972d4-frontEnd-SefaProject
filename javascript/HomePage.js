@@ -28,11 +28,6 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
         if(insideSubDataElement !== null){
           insideSubDataElement.textContent = data[revertIndex].projectName;
         }
-       } catch (e) { console.log(e) };try { 
-        const insideSubDataElement = subDataElements[i-(chunk-1 )*subDataElements.length].querySelector("[annotationname = 'deleteProject']");
-        if(insideSubDataElement !== null){
-          insideSubDataElement.textContent = data[revertIndex].deleteProject;
-        }
        } catch (e) { console.log(e) };
         }
     })
@@ -86,9 +81,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
     }
   document.getElementById('iqjir').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/Overview';}};document.getElementById('i73hk').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};window.onload = () => {apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements = document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" );
+    { location.href= '/Overview';}};window.onload = () => {apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements = document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" );
   data.forEach((item,i) => {
     if(subDataElements.length > i)
       {
@@ -100,16 +93,6 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
       }
       else if(subDataElements[i].getAttribute('annotationname') === 'projectName'){
         subDataElements[i].textContent = data[data.length -i -1].projectName;
-        
-      }
-     } catch (e) { console.log(e) };try { 
-      const insideSubDataElement = subDataElements[i].querySelector("[annotationname = 'deleteProject']");
-      if(insideSubDataElement !== null){
-        insideSubDataElement.textContent = data[data.length -i -1].deleteProject;
-        
-      }
-      else if(subDataElements[i].getAttribute('annotationname') === 'deleteProject'){
-        subDataElements[i].textContent = data[data.length -i -1].deleteProject;
         
       }
      } catch (e) { console.log(e) };
