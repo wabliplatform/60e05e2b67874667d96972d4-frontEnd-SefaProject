@@ -1,6 +1,10 @@
 let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';document.getElementById('idts').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/HomePage';}};document.getElementById('i0v3u').onclick = (event) => {
+    { location.href= '/HomePage';}};document.getElementById('i8xhy').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Overview';}};document.getElementById('iu7ac').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/EnterPage';}};document.getElementById('i0v3u').onclick = (event) => {
     event.preventDefault();
     { location.href= '/HomePage';}};document.getElementById('i05kl').onclick = (event) => {
     event.preventDefault();

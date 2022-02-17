@@ -2,7 +2,9 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
     event.preventDefault();
     { location.href= '/HomePage';}};document.getElementById('ima8').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/HomePage';}};document.getElementById('i0v3u').onclick = (event) => {
+    { location.href= '/HomePage';}};document.getElementById('iu7ac').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/EnterPage';}};document.getElementById('i0v3u').onclick = (event) => {
     event.preventDefault();
     { location.href= '/HomePage';}};document.getElementById('i84zv').onclick = (event) => {
     event.preventDefault();

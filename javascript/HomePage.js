@@ -1,4 +1,8 @@
-let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';const onClickPaginationButton = (chunk, pagination) => {
+let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';document.getElementById('i8xhy').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Overview';}};document.getElementById('iu7ac').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/EnterPage';}};const onClickPaginationButton = (chunk, pagination) => {
     for (let i = 0; i < pagination.children.length; i++) {
       if (
         pagination.children[i].classList.value.includes("active") === true

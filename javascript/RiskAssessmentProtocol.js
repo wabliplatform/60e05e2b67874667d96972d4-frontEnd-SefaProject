@@ -2,7 +2,11 @@ document.getElementById('idts').onclick = (event) => {
     event.preventDefault();
     { location.href= '/HomePage';}};document.getElementById('ima8').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/HomePage';}};document.getElementById('i05kl').onclick = (event) => {
+    { location.href= '/HomePage';}};document.getElementById('i8xhy').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/Overview';}};document.getElementById('iu7ac').onclick = (event) => {
+    event.preventDefault();
+    { location.href= '/EnterPage';}};document.getElementById('i05kl').onclick = (event) => {
     event.preventDefault();
     { window.document.location = '/';}};document.getElementById('itq9jt').onclick = (event) => {
     event.preventDefault();
