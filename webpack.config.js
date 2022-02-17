@@ -9,6 +9,7 @@ module.exports = {
 	'Profit&Loss' : './javascript/Profit&Loss.js',
 	'RiskAssessmentProtocol' : './javascript/RiskAssessmentProtocol.js',
 	'updateOverview' : './javascript/updateOverview.js',
+	'EnterPage' : './javascript/EnterPage.js',
 },
   output: {
     path: path.resolve(__dirname, 'dist'),
