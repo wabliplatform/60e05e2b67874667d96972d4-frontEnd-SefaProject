@@ -11,11 +11,13 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
       }
     }
 
-    let numberOfFrontButtons =  findTypeOfPagination(pagination); 
+    let numberOfFrontButtons =  findTypeOfPagination(pagination);
     pagination.children[chunk+numberOfFrontButtons-1].classList.add("active");
 
-  apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements = document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" );
-[...subDataElements].forEach((element, index) => {
+  apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" )].filter(
+    (element, index, array) =>
+    !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
+  );const map = new Map();[...subDataElements].forEach((element, index) => {
         if (index >= data.length - (chunk-1)*subDataElements.length) {
             subDataElements[index].style.display = 'none';
         }
@@ -33,7 +35,9 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           insideSubDataElement.textContent = data[revertIndex].projectName;
         }
        } catch (e) { console.log(e) };
+            map.set(subDataElements[i-(chunk-1) * subDataElements.length].getAttribute('id'), data[data.length-i-1])
         }
+        window.localStorage.setItem('data', JSON.stringify(Array.from(map.entries())));
     })
     }});}
 
@@ -41,7 +45,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
 
       let firstChild = pagination.children[0];
       let secondChild = pagination.children[1];
-    
+
       if (
         (firstChild.attributes.getNamedItem("pagination-first") !== null ||
           firstChild.attributes.getNamedItem("pagination-previous") !== null) &&
@@ -60,7 +64,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
       else{
         return 0;
       }
-    
+
     }
   
 
@@ -85,8 +89,10 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
     }
   document.getElementById('iqjir').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/Overview';}};window.onload = () => {apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements = document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" );
-  data.forEach((item,i) => {
+    { location.href= '/Overview';}};window.onload = () => {apiProjectApi.getAllproject((error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); const subDataElements =[...document.getElementById("ijlrm").querySelectorAll( "[dataitem='true']" )].filter(
+    (element, index, array) =>
+    !array.reduce((hasAncestorFlag, dataItem) => hasAncestorFlag || (element.compareDocumentPosition(dataItem) & Node.DOCUMENT_POSITION_CONTAINS) === 8, false)
+  );const map = new Map();  data.forEach((item,i) => {
     if(subDataElements.length > i)
       {
         try { 
@@ -100,9 +106,11 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
         
       }
      } catch (e) { console.log(e) };
-        subDataElements[i].addEventListener('click',() => {{ location.href= '/updateOverview/'+data[data.length -i -1]._id+'';}} )
+        map.set(subDataElements[i].getAttribute('id'), data[data.length-i-1])
+        
       }
     });
+    window.localStorage.setItem('data', JSON.stringify(Array.from(map.entries())));
     
   let numberOfPages = Math.ceil(data.length/subDataElements.length);
   let pagination = document.querySelector('[pagination-list="true"]');
