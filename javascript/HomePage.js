@@ -89,19 +89,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
     }
   document.getElementById('iqjir').onclick = (event) => {
     event.preventDefault();
-    { location.href= '/Overview';}};document.getElementById('in6m7').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');
-      if(projectId === '/HomePage' || projectId === ''){
-        const storedData = window.localStorage.getItem('data');
-        const newMap = new Map(JSON.parse(storedData));
-        newMap.forEach( (value, key) => {
-          if(document.getElementById(key).contains(document.getElementById('in6m7')) === true){
-            projectId = value._id;
-          }
-        })
-      }
-   let project = new TempApi.Project();project['projectName'] = document.querySelector("[annotationname = 'projectName']").textContent; let opts = {project};apiProjectApi.updateproject( projectId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;{ location.href= '/updateOverview/'+response.body.query._id+'';}}});};document.getElementById('inie33').onclick = (event) => {
+    { location.href= '/Overview';}};document.getElementById('inie33').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/HomePage/','');
       if(projectId === '/HomePage' || projectId === ''){
@@ -113,19 +101,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           }
         })
       }
-   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('ic8xwv').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');
-      if(projectId === '/HomePage' || projectId === ''){
-        const storedData = window.localStorage.getItem('data');
-        const newMap = new Map(JSON.parse(storedData));
-        newMap.forEach( (value, key) => {
-          if(document.getElementById(key).contains(document.getElementById('ic8xwv')) === true){
-            projectId = value._id;
-          }
-        })
-      }
-   let project = new TempApi.Project();project['projectName'] = document.querySelector("[annotationname = 'projectName']").textContent; let opts = {project};apiProjectApi.updateproject( projectId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;{ location.href= '/updateOverview/'+response.body.query._id+'';}}});};document.getElementById('itb5fd').onclick = (event) => {
+   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('itb5fd').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/HomePage/','');
       if(projectId === '/HomePage' || projectId === ''){
@@ -137,19 +113,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           }
         })
       }
-   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('it5oxb').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');
-      if(projectId === '/HomePage' || projectId === ''){
-        const storedData = window.localStorage.getItem('data');
-        const newMap = new Map(JSON.parse(storedData));
-        newMap.forEach( (value, key) => {
-          if(document.getElementById(key).contains(document.getElementById('it5oxb')) === true){
-            projectId = value._id;
-          }
-        })
-      }
-   let project = new TempApi.Project();project['projectName'] = document.querySelector("[annotationname = 'projectName']").textContent; let opts = {project};apiProjectApi.updateproject( projectId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;{ location.href= '/updateOverview/'+response.body.query._id+'';}}});};document.getElementById('ikbppi').onclick = (event) => {
+   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('ikbppi').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/HomePage/','');
       if(projectId === '/HomePage' || projectId === ''){
@@ -161,19 +125,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           }
         })
       }
-   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('itxqgs').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');
-      if(projectId === '/HomePage' || projectId === ''){
-        const storedData = window.localStorage.getItem('data');
-        const newMap = new Map(JSON.parse(storedData));
-        newMap.forEach( (value, key) => {
-          if(document.getElementById(key).contains(document.getElementById('itxqgs')) === true){
-            projectId = value._id;
-          }
-        })
-      }
-   let project = new TempApi.Project();project['projectName'] = document.querySelector("[annotationname = 'projectName']").textContent; let opts = {project};apiProjectApi.updateproject( projectId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;{ location.href= '/updateOverview/'+response.body.query._id+'';}}});};document.getElementById('ilertf').onclick = (event) => {
+   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('ilertf').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/HomePage/','');
       if(projectId === '/HomePage' || projectId === ''){
@@ -185,19 +137,7 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
           }
         })
       }
-   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('ixxw8u').onclick = (event) => {
-    event.preventDefault();
-    let projectId = window.location.pathname.replace('/HomePage/','');
-      if(projectId === '/HomePage' || projectId === ''){
-        const storedData = window.localStorage.getItem('data');
-        const newMap = new Map(JSON.parse(storedData));
-        newMap.forEach( (value, key) => {
-          if(document.getElementById(key).contains(document.getElementById('ixxw8u')) === true){
-            projectId = value._id;
-          }
-        })
-      }
-   let project = new TempApi.Project();project['projectName'] = document.querySelector("[annotationname = 'projectName']").textContent; let opts = {project};apiProjectApi.updateproject( projectId, opts, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;{ location.href= '/updateOverview/'+response.body.query._id+'';}}});};document.getElementById('is3qxl').onclick = (event) => {
+   apiProjectApi.deleteproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully.');{ location.href= '/HomePage';}}});};document.getElementById('is3qxl').onclick = (event) => {
     event.preventDefault();
     let projectId = window.location.pathname.replace('/HomePage/','');
       if(projectId === '/HomePage' || projectId === ''){
@@ -320,4 +260,54 @@ let apiProjectApi = new TempApi.ProjectApi();import TempApi from '../src/index';
         };
       }
     };
-    [...subDataElements].forEach((element,index) => {if(index >= data.length) subDataElements[index].style.display = 'none';})}});};
+    [...subDataElements].forEach((element,index) => {if(index >= data.length) subDataElements[index].style.display = 'none';})}});let projectId = window.location.pathname.replace('/HomePage/','');
+      if(projectId === '/HomePage' || projectId === ''){
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach( (value, key) => {
+          if(document.getElementById(key).contains(document.getElementById('in6m7')) === true){
+            projectId = value._id;
+          }
+        })
+      }
+   apiProjectApi.getproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;}});let projectId = window.location.pathname.replace('/HomePage/','');
+      if(projectId === '/HomePage' || projectId === ''){
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach( (value, key) => {
+          if(document.getElementById(key).contains(document.getElementById('ic8xwv')) === true){
+            projectId = value._id;
+          }
+        })
+      }
+   apiProjectApi.getproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;}});let projectId = window.location.pathname.replace('/HomePage/','');
+      if(projectId === '/HomePage' || projectId === ''){
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach( (value, key) => {
+          if(document.getElementById(key).contains(document.getElementById('it5oxb')) === true){
+            projectId = value._id;
+          }
+        })
+      }
+   apiProjectApi.getproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;}});let projectId = window.location.pathname.replace('/HomePage/','');
+      if(projectId === '/HomePage' || projectId === ''){
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach( (value, key) => {
+          if(document.getElementById(key).contains(document.getElementById('itxqgs')) === true){
+            projectId = value._id;
+          }
+        })
+      }
+   apiProjectApi.getproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;}});let projectId = window.location.pathname.replace('/HomePage/','');
+      if(projectId === '/HomePage' || projectId === ''){
+        const storedData = window.localStorage.getItem('data');
+        const newMap = new Map(JSON.parse(storedData));
+        newMap.forEach( (value, key) => {
+          if(document.getElementById(key).contains(document.getElementById('ixxw8u')) === true){
+            projectId = value._id;
+          }
+        })
+      }
+   apiProjectApi.getproject( projectId, (error, data, response) => { if (error) {console.error(error);} else { console.log('API called successfully. Returned data: ' + data); document.querySelector('[annotationname = projectName]').textContent = response.body.query.projectName ;}});};
